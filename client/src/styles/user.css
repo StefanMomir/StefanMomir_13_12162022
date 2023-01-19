@@ -1,0 +1,65 @@
+.main-nav-logo {
+  color: black !important;
+  cursor: pointer;
+}
+
+.error {
+  color: red;
+}
+
+.succesful {
+  color: rgb(116, 116, 249);
+}
+
+.icon {
+  font-size: 40px;
+}
+
+.signin-link {
+  display: inline-flex;
+  flex-flow: row;
+  margin: auto;
+  justify-content: center;
+}
+
+.dropdown-form {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.dropdown-form label {
+  padding: 10px;
+}
+
+.profile-icon {
+  position: relative;
+  font-size: 20px;
+  margin: auto;
+  padding-right: 15px;
+  padding-top: 10px;
+}
+
+.profile-name {
+  position: relative;
+  font-size: 20px;
+  margin: auto;
+  padding-right: 15px;
+  padding-top: 10px;
+}
+
+.profile-edit {
+  display: none;
+  visibility: hidden;
+}
+
+.profile-edit.On {
+  display: flex;
+  visibility: visible;
+  margin: auto;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.profile-edit input {
+  padding: 5px;
+}
