@@ -21,7 +21,7 @@ const SignIn = () => {
     }
     if (isSuccess || user) {
       console.log("SignIn Success:" + isSuccess);
-      navigate("/dashboard");
+      navigate("/profile");
     }
   }, [user, isError, isSuccess, message, navigate, dispatch]);
 
@@ -42,7 +42,7 @@ const SignIn = () => {
     <main className="main bg-dark">
       <section className="sign-in-content">
         <i className="fa fa-user-circle sign-in-icon"></i>
-        <h1>Sign In</h1>
+        <h1>Log In</h1>
         <div className="error">{(isError, message)}</div>
         <form onSubmit={handleSignIn}>
           <div className="input-wrapper">
@@ -62,7 +62,7 @@ const SignIn = () => {
             <input type="checkbox" id="remember-me" />
             <label htmlFor="remember-me">Remember me</label>
           </div>
-          <button className="sign-in-button">Sign In</button>
+          <button className="sign-in-button">Log In</button>
         </form>
       </section>
     </main>

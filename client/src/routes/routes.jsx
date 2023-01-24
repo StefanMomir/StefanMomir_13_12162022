@@ -25,7 +25,7 @@ const MainRoutes = () => {
     <Routes>
       <Route path="*" element={<Home />} />
       <Route
-        path="/dashboard"
+        path="/profile"
         exact
         element={
           <ProtectedRoutes>
@@ -34,11 +34,11 @@ const MainRoutes = () => {
         }
       >
         <Route path="*" element={<Home />} />
-        <Route path="/dashboard" exact element={<Dashboard />} />
+        <Route path="/profile" exact element={<Dashboard />} />
         {/*<Route path="/dashboard/:id" exact element={<Users />} />*/}
       </Route>
       <Route path="/" element={<Home />} />
-      <Route path="/signin" element={<SignIn />} />
+      <Route path="/login" element={<SignIn />} />
     </Routes>
   );
 };

@@ -34,18 +34,18 @@ const Nav = () => {
         {user ? (
           <div className="signin-link">
             <div className="profile-icon">
-              <NavLink to="/dashboard" className="main-nav-logo">
+              <NavLink to="/profile" className="main-nav-logo">
                 <FaUserCircle className="icon" />
               </NavLink>
             </div>
             <div className="profile-name">{profile?.firstName}</div>
             <button className="sign-in-button" onClick={handleLogout}>
-              Sign Out
+              Log Out
             </button>
           </div>
         ) : (
-          <NavLink to="/signin" className="main-nav-item">
-            <button className="sign-in-button">Sign In</button>
+          <NavLink to="/login" className="main-nav-item">
+            <button className="sign-in-button">Log In</button>
           </NavLink>
         )}
       </div>
