@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import Users from "../pages/User.jsx";
 import Dashboard from "../pages/Dashboard.jsx";
 import Home from "../pages/Index.jsx";
 import { Outlet, Route, Routes } from "react-router-dom";
